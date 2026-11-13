@@ -9,9 +9,9 @@ scipy
 # 혼합효과 모형 (발견 시간 모델링)
 statsmodels
 
-# 정수계획 (배치 최적화) - 둘 중 팀이 쓰는 것만 남겨도 됨
+# 정수계획 (배치 최적화): PuLP + HiGHS
 pulp
-ortools
+highspy
 
 # 시각화
 matplotlib

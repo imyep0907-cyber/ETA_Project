@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# 연구 데이터 (개인정보 포함)
+data/raw/
+*.tsv
+*.gazedata
+stimuli/

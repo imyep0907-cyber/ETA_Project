@@ -230,11 +230,14 @@ data/
   processed/           TTFF 테이블, 가중치
 notebooks/             탐색적 분석, 결과 시각화
 src/
-  preprocess.py        시선 로그 → AOI 매핑 → TTFF
-  model.py             혼합효과 회귀, 교차검증, 부트스트랩
-  optimize.py          정수계획 배치 최적화, 민감도 분석
-  config.py            제외 기준 및 경로 상수
-scripts/
+  preprocess/          시선 로그 → AOI 매핑 → TTFF
+  model/               혼합효과 회귀, 교차검증, 부트스트랩
+  optimize/            정수계획 배치 최적화, 민감도 분석
+  config.py            제외 기준 및 경로 상수 (예정)
+scripts/               (예정)
+  preprocess.py        전처리 실행
+  fit_cost.py          비용함수 추정 실행
+  optimize.py          배치 최적화 실행
   run_pipeline.py      전 단계 일괄 실행
 results/               그림, 표
 docs/
@@ -244,9 +247,11 @@ docs/
 
 ### 5.2 실행
 
+> 아래 실행 스크립트는 구현 예정이며, 현재는 폴더 구조와 환경 설정만 갖추어져 있다.
+
 ```bash
 pip install -r requirements.txt
-python scripts/run_pipeline.py --mock      # 모의 데이터로 전 단계 점검
+python scripts/run_pipeline.py --mock      # 모의 데이터로 전 단계 점검 (예정)
 ```
 
 실측 데이터 확보 후에는 단계별로 실행한다.
